@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: black; }
+
+#home-container {
+  width: 100vw;
+  height: 100vh;
+  background: url("http://priyashakya.com.np/wp-content/uploads/2017/07/maxresdefault.jpg") center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding: 180px; }
+
+.card-body {
+  margin-top: -280px; }
+
+.needy-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.needy-container div#map,
+.container-mio div#map {
+  width: 100%;
+  height: 500px; }
+
+.container-mio {
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+/*# sourceMappingURL=style.css.map */
