@@ -13,7 +13,7 @@ exports.signupGet = (req, res) => {
 exports.signupPost = async (req, res, next) => {
   const { username, email, password, telephone_number } = req.body;
   const userCreated = await User.register(
-    { username, email, telephone_number, role: "Do-Gooder" },
+    { username, email, telephone_number },
     password
   ).catch(err => {
     const templateConfig = {
@@ -30,7 +30,7 @@ exports.signupPost = async (req, res, next) => {
     req.logIn(user, err => {
       if (err) return next(err);
       req.user = user;
-      return res.redirect(`/do-gooder/profile`);
+      return res.redirect(`/profile`);
     });
   })(req, res, next);
 };
@@ -59,7 +59,7 @@ exports.loginPost = (req, res, next) => {
     req.logIn(user, err => {
       if (err) return next(err);
       req.user = user;
-      return res.redirect("/do-gooder/profile");
+      return res.redirect("/profile");
     });
   })(req, res, next);
 };
@@ -91,6 +91,4 @@ exports.profilePost = async (req, res, next) => {
       $set: { username, telephone_number }
     });
   }
-  req.user = userUpdated;
-  res.redirect(`/${userUpdated.role.toLowerCase()}/profile`);
 };

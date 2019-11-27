@@ -25,7 +25,7 @@ router.get(
 router.get(
   "/facebook/callback",
   passport.authenticate("facebook", {
-    successRedirect: "/needy/profile",
+    successRedirect: "/user/profile",
     failureRedirect: "/"
   })
 );
@@ -40,7 +40,7 @@ router.get(
 // router.get(
 //   "/google/callback",
 //   passport.authenticate("google", {
-//     successRedirect: "/needy/profile",
+//     successRedirect: "/user/profile",
 //     failureRedirect: "/"
 //   })
 // );

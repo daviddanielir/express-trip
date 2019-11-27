@@ -1,12 +1,17 @@
-<div class="needy-container">
+<div class="user-container">
   <div class="card text-center" style="width: 18rem;">
-   
-    <img src="{{user.photoURL}}" class="card-img-top" alt="{{user.username}}">
-    <div class="card-body">
+  
+    <img  src="{{user.photoURL}}" class="card-img-top" alt="{{user.username}}">
+    <div class="">
       <h5 class="card-title">{{user.username}}</h5>
       <p class="card-text">
         {{user.email}}
       </p>
+
+ <p class="card-text">
+          {{user.telephone_number}}
+      </p>
+    
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Edit
       </button>
@@ -28,7 +33,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="/needy/profile" method="POST" enctype="multipart/form-data">
+        <form action="/user/profile" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label for="formGroupExampleInput">Username</label>
             <input name="username" type="text" class="form-control" id="formGroupExampleInput" value="{{user.username}}"
@@ -61,3 +66,14 @@
     document.querySelector('label.custom-file-label span').innerText = e.target.files[0].name
   })
 </script>
+
+
+<section id="photos">
+  {{#each photos}}
+  <article class="post">
+    <img src="{{this.imgPath}}" alt="{{this.title}}" class="post-image">
+    <p>{{this.title}}</p>
+    <small>{{this.description}}</small>
+  </article>
+  {{/each}}
+</section>

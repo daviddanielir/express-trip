@@ -17,4 +17,5 @@ exports.isAuth = (req, res, next) =>
 exports.canLogin = (req, res, next) =>
   !req.isAuthenticated()
     ? next()
-    : res.redirect(`/${req.user.role.toLowerCase()}/profile`);
+    : res.redirect(`/profile`);
+//aqui un /

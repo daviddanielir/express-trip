@@ -62,14 +62,17 @@ app.locals.title = "Express-Trip";
 
 const index = require("./routes/index");
 const authRoutes = require("./routes/authRoutes");
-const needyRoutes = require("./routes/needyRoutes");
+const userRoutes = require("./routes/userRoutes");
+const photoRoutes = require("./routes/photoRouter")
+
 app.use("/", whichRole, index);
 app.use("/", authRoutes);
-app.use("/needy", isAuth, needyRoutes);
+app.use("/user", isAuth, userRoutes);
+
+app.use("/photo", isAuth, photoRoutes)
 
 module.exports = app;
 
 
 
 
-// "passport-google-oauth20": "^2.0.0",

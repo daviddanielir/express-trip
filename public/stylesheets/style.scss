@@ -7,6 +7,9 @@ a {
   color: black;
 }
 
+#boton{
+  margin-top: -10px;
+}
 #home-container {
   width: 100vw;
   height: 100vh;
@@ -19,9 +22,22 @@ a {
 }
 
 .card-body{
-  margin-top: -280px;
+  margin-top: -350px
+
 }
-.needy-container {
+
+.card-title{
+  text-align: center;
+  font-style: cursive;
+  font-size: 36px;
+}
+.card-text{
+  text-align: center;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.user-container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -29,11 +45,8 @@ a {
   justify-content: space-evenly;
 }
 
-.needy-container div#map,
-.container-mio div#map {
-  width: 100%;
-  height: 500px;
-}
+
+
 
 .container-mio {
   flex-direction: column;

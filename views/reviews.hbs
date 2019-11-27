@@ -1,0 +1,22 @@
+<section id="photos">
+  {{#each photos}}
+
+
+  <article class="post">
+    
+{{!-- //preguntarle como traerme el nombre del user --}}
+     <div class="card" style="width: 20rem;">
+  <img src="{{this.imgPath}}" class="card-img-top" alt="{{this.title}}">
+
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <p class="card-text">{{this.description}}<p>
+
+  </div>
+</div>
+  </article>
+
+
+  {{/each}}
+</section>
+
