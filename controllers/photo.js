@@ -7,14 +7,14 @@ exports.addPhotoView = (req, res) => {
 exports.addPhoto = async (req, res) => {
   const { title, description } = req.body;
   const { secure_url, originalname } = req.file;
-
-  console.log(req.file);
+  const creator = req.user._id
 
   await Photo.create({
     title,
     description,
     imgPath: secure_url,
-    imgName: originalname
+    imgName: originalname,
+    creator
   });
 
   res.redirect("/photo/reviews");

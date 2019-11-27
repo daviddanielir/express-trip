@@ -7,7 +7,12 @@ const photoSchema = new Schema(
     title: String,
     description: String,
     imgName: String,
-    imgPath: String
+    imgPath: String,
+    creator: {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    },
+
   },
   { timestamps: true }
 );
