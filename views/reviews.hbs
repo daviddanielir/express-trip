@@ -1,21 +1,17 @@
 <section id="photos">
   {{#each photos}}
-
-
+  <h1 class="is-size-1"></h1>
+  <div class="columns is-mobile is-multiline is-centered"></div>
+  <div class="column is-4"></div>
   <article class="post">
-     <div class="card" style="width: 20rem;">
-  <img src="{{this.imgPath}}" class="card-img-top" alt="{{this.title}}">
-
-  <div class="card-body">
-    <h5 class="card-title">{{this.title}}</h5>
-    <p class="card-text">{{this.description}}<p>
-  <p class="card-title">{{this.creator.username}}<p>
-
-  </div>
-</div>
+    <div class="card" style="width: 20rem;">
+      <img src="{{this.imgPath}}" class="card-img-top" alt="{{this.title}}">
+      <div id="the-reviews" class="card-body">
+        <h5 id="title-review" class="card-title">{{this.title}}</h5>
+        <p id="text-description" class="card-text">{{this.description}}<p>
+            <p id="card-username" class="card-title">{{this.creator.username}}<p>
+      </div>
+    </div>
   </article>
-
-
   {{/each}}
 </section>
-

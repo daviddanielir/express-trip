@@ -1,0 +1,15 @@
+
+<br>
+<br>
+<br>
+
+<h2>Trips:</h2>
+<ul>
+    {{#each data}}
+        <li><a href="/trips/{{this.id}}">{{ this.title }}</a> 
+        <br>
+         <a href="/trips/{{this.id}}/delete">DELETE</a> 
+        <br>
+         <a href="/trips/edit/{{this.id}}">EDIT</a></li>
+    {{/each}}
+</ul>

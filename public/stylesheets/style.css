@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font-size: 14px; }
 
 a {
   color: black; }
@@ -23,12 +23,10 @@ a {
 
 .card-title {
   text-align: center;
-  font-style: cursive;
   font-size: 36px; }
 
 .card-text {
   text-align: center;
-  font-style: oblique;
   font-size: 20px; }
 
 .user-container {
@@ -40,6 +38,40 @@ a {
 
 .container-mio {
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+#photos {
+  padding: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+#the-reviews {
+  margin-top: 30px; }
+
+#title-review {
+  text-align: center;
+  color: #4d4442;
+  font-size: 30px;
+  font-weight: normal; }
+
+#text-description {
+  text-align: center;
+  color: black;
+  font-size: 15px; }
+
+#card-username {
+  text-align: end;
+  color: #f021bd;
+  font-size: 20px; }
+
+#newtrip {
   width: 100vw;
   height: 100vh;
   display: flex;

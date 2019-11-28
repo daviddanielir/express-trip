@@ -64,12 +64,15 @@ const index = require("./routes/index");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const photoRoutes = require("./routes/photoRouter")
+const trips = require('./routes/trips');
 
 app.use("/", whichRole, index);
 app.use("/", authRoutes);
 app.use("/user", isAuth, userRoutes);
 
 app.use("/photo", isAuth, photoRoutes)
+
+app.use("/",isAuth, trips);
 
 module.exports = app;
 
