@@ -31,11 +31,30 @@ a {
   font-size: 20px;
 }
 .user-container {
+  scroll-padding-inline-start: 50;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+#card {
+  border-color: silver;
+}
+#name-container {
+  text-align: center;
+  font-size: 30px;
+  color: #172d33;
+}
+#email-container {
+  text-align: center;
+  font-size: 15px;
+  color: #a52184;
+}
+#telephone {
+  text-align: center;
+  font-size: 15px;
+  color: #a52184;
 }
 .container-mio {
   flex-direction: column;
@@ -49,16 +68,16 @@ a {
   padding: 3rem;
   box-sizing: border-box;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 #the-reviews {
   margin-top: 30px;
 }
 #title-review {
   text-align: center;
-  color: #4d4442;
+  color: #0e163a;
   font-size: 30px;
   font-weight: normal;
 }
@@ -69,16 +88,29 @@ a {
 }
 #card-username {
   text-align: end;
-  color: #f021bd;
+  color: #681353;
   font-size: 20px;
 }
-
-
-#newtrip{
-
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.caja {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  background: #fcf8cd;
+  text-align: center;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid #d5c20b;
 }
+
+#profile{
+  margin-top: 180px;
+  margin-right: 700px;
+}
+
+#hrroja{
+
+  border: 3px solid #5c144a;
+  
+ }

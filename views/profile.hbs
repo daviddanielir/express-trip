@@ -1,37 +1,22 @@
 <div class="user-container">
+  <div id="profile" class="card text-center" style="width: 18rem;">
   
-  <div class="card text-center" style="width: 18rem;">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-    <img  src="{{user.photoURL}}" class="card-img-top" alt="{{user.username}}">
+  
+    <img src="{{user.photoURL}}" class="card-img-top" alt="{{user.username}}">
     <div class="">
-      <p class="card-title">{{user.username}}<p>
-      <p class="card-text">
+      <h5 id="name-container" class="card-title">  Hola, soy {{user.username}}</h5>
+      <p id="email-container" class="card-text">
         {{user.email}}
       </p>
-
- <p class="card-text">
-          {{user.telephone_number}}
+      <p id="telephone" class="card-text"> Tel: 
+        {{user.telephone_number}}
       </p>
-    
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Edit
       </button>
     </div>
   </div>
 </div>
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
@@ -71,14 +56,11 @@
     </div>
   </div>
 </div>
-
 <script>
   document.querySelector('input[name="photoURL"]').addEventListener('change', (e) => {
     document.querySelector('label.custom-file-label span').innerText = e.target.files[0].name
   })
 </script>
-
-
 <section id="photos">
   {{#each photos}}
   <article class="post">
