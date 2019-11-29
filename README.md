@@ -7,20 +7,15 @@ Esta app fue creada pensando en el placer de viajar y disfrutar al 100% de su vi
 
 Para poder usar esta app es necesario usar los siguientes usuarios de prueba para poder acceder, editar, crear y ver tus viajes: 
 
-Email: gzhleebcdg_1574876134@tfbnw.net
-Pass: Express-Trip
-/////////////////////////////////
-Email: lmgohcuyfz_1574876136@tfbnw.net
-Pass: Express-Trip
-/////////////////////////////////
-Email: uzgtgetylq_1574876133@tfbnw.net	
-Pass: Express-Trip
-/////////////////////////////////
->Email: dbounvzpuz_1574876135@tfbnw.net
->Pass: Express-Trip
-/////////////////////////////////
-Email: open_ruzisgw_user@tfbnw.net
-Pass: Express-Trip
+#Email: gzhleebcdg_1574876134@tfbnw.net
+#Pass: Express-Trip
+
+#Email: lmgohcuyfz_1574876136@tfbnw.net
+#Pass: Express-Trip
+
+#Email: uzgtgetylq_1574876133@tfbnw.net	
+#Pass: Express-Trip
+
 
 
 # Happy Coding!❤️
