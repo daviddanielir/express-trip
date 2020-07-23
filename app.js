@@ -72,6 +72,7 @@ app.use("/user", isAuth, userRoutes);
 
 app.use("/photo", isAuth, photoRoutes)
 
+
 app.use("/",isAuth, trips);
 
 module.exports = app;
